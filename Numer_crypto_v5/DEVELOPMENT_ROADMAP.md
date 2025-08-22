@@ -10,7 +10,7 @@
 | **RMSE Target** | < 0.23 | < 0.22 | < 0.215 | < 0.21 | **0.20 ✅** |
 | **Feature Count** | 20-30 | 50-70 | 80-100 | 100-120 | **160 ✅** |
 | **Symbol Coverage** | 50 | 100 | 200-500 | 1000+ | **1757+ ✅** |
-| **Processing Speed** | 500-1000 min | 130-150 min |30-60 min | 30s-1min | **18.7s ✅** |
+| **Processing Speed** | 500-1000 min | 130-150 min |60-130 min | 30-60min | **54 min ✅** |
 | **Architecture** | Basic | Modular | Advanced | Optimized | **Enterprise ✅** |
 | **Data Quality** | Manual | Semi-auto | Automated | Validated | **GPU-Accelerated ✅** |
 | **Testing** | None | Basic | Structured | Comprehensive | **82.4% Pass ✅** |
