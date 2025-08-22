@@ -257,8 +257,8 @@ tests_v5/
 
 **V5 has achieved enterprise-grade sophistication:**
 
-✅ **Ultra-High Performance**: RMSE 0.081 (46% better than target)  
-✅ **Industrial Scale**: 1757+ symbols, 138 features, 18.7s runtime  
+✅ **Ultra-High Performance**: RMSE 0.201 
+✅ **Industrial Scale**: 1757+ symbols, 138 features, 54 minutes runtime  
 ✅ **Clean Architecture**: Zero abandoned code, modular design  
 ✅ **Production Ready**: 82.4% test pass rate, comprehensive validation  
 ✅ **Future Proof**: GPU acceleration, scalable batch processing  
