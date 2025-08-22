@@ -1,0 +1,33 @@
+2025-08-15 09:07:24,499 - numerai_crypto_v5 - INFO - ✅ V5 Advanced components initialized
+2025-08-15 09:07:24,499 - numerai_crypto_v5 - INFO - ⏰ Temporal feature engineering initialized (leak prevention enabled)
+2025-08-15 09:07:24,500 - numerai_crypto_v5 - INFO - 🧠 PyTorch Neural Ensemble initialized
+2025-08-15 09:07:24,500 - numerai_crypto_v5 - INFO -    Model type: transformer
+2025-08-15 09:07:24,500 - numerai_crypto_v5 - INFO -    Hidden dim: 256
+2025-08-15 09:07:24,500 - numerai_crypto_v5 - INFO -    Layers: 3
+2025-08-15 09:07:24,500 - numerai_crypto_v5 - INFO - 🚀 Numerai Crypto V5 ULTRA Pipeline initialized
+2025-08-15 09:07:24,500 - numerai_crypto_v5 - INFO - 🎯 BREAKTHROUGH TARGETS: RMSE < 0.08 | CORR > 0.9 | MMC > 0.3 | Sharpe > 2.0
+2025-08-15 09:07:24,500 - numerai_crypto_v5 - INFO - ⚡ Starting Numerai Crypto V5 Fast Pipeline
+2025-08-15 09:07:24,500 - numerai_crypto_v5 - INFO - 🚀 Starting Numerai Crypto V5 Comprehensive Pipeline
+2025-08-15 09:07:24,500 - numerai_crypto_v5 - INFO - ================================================================================
+2025-08-15 09:07:24,500 - numerai_crypto_v5 - INFO - 📊 PHASE 1: DATA LOADING
+2025-08-15 09:07:24,500 - numerai_crypto_v5 - INFO - 📊 Loading V5 training data...
+2025-08-15 09:07:24,511 - numerai_crypto_v5 - INFO - ✅ Targets loaded: (3640, 3)
+2025-08-15 09:07:24,531 - numerai_crypto_v5 - INFO - ✅ Price data loaded: (53288, 9)
+2025-08-15 09:07:24,570 - numerai_crypto_v5 - INFO - ✅ Data merged: (3499, 10)
+2025-08-15 09:07:24,571 - numerai_crypto_v5 - INFO - 🔧 PHASE 2: V5 FEATURE ENGINEERING
+2025-08-15 09:07:24,571 - numerai_crypto_v5 - INFO - 🔧 Generating V5 ULTRA advanced features (LEAK-FREE)...
+2025-08-15 09:07:24,571 - numerai_crypto_v5 - INFO - ⏰ Using temporal feature engineering (leak-free)
+2025-08-15 09:08:06,051 - numerai_crypto_v5 - INFO - 🚀 Applying BREAKTHROUGH advanced feature engineering...
+2025-08-15 09:08:06,060 - numerai_crypto_v5 - INFO - ✅ Advanced features added: 94 new features
+2025-08-15 09:08:06,060 - numerai_crypto_v5 - INFO - ✅ V5 ULTRA features generated (LEAK-FREE): (3499, 104)
+2025-08-15 09:08:06,060 - numerai_crypto_v5 - INFO -    Total features: 104
+2025-08-15 09:08:06,060 - numerai_crypto_v5 - INFO -    Samples: 3499
+2025-08-15 09:08:06,060 - numerai_crypto_v5 - INFO - 🎯 PHASE 3: ADVANCED FEATURE SELECTION
+2025-08-15 09:08:06,060 - numerai_crypto_v5 - ERROR - ❌ V5 Pipeline failed: 'Target column not found in feature data'
+2025-08-15 09:08:06,060 - numerai_crypto_v5 - ERROR - Traceback (most recent call last):
+  File "/media/knight2/EDB/repos/Numer_crypto_v5/scripts/numerai_crypto_pipeline.py", line 957, in run_comprehensive_pipeline
+    raise KeyError("Target column not found in feature data")
+KeyError: 'Target column not found in feature data'
+
+2025-08-15 09:08:06,060 - numerai_crypto_v5 - ERROR - ❌ Fast pipeline failed: 'Target column not found in feature data'
+2025-08-15 09:08:06,060 - numerai_crypto_v5 - ERROR - ❌ Pipeline failed: 'Target column not found in feature data'

@@ -1,0 +1,142 @@
+2025-08-15 09:09:15,096 - numerai_crypto_v5 - INFO - ✅ V5 Advanced components initialized
+2025-08-15 09:09:15,096 - numerai_crypto_v5 - INFO - ⏰ Temporal feature engineering initialized (leak prevention enabled)
+2025-08-15 09:09:15,096 - numerai_crypto_v5 - INFO - 🧠 PyTorch Neural Ensemble initialized
+2025-08-15 09:09:15,097 - numerai_crypto_v5 - INFO -    Model type: transformer
+2025-08-15 09:09:15,097 - numerai_crypto_v5 - INFO -    Hidden dim: 256
+2025-08-15 09:09:15,097 - numerai_crypto_v5 - INFO -    Layers: 3
+2025-08-15 09:09:15,097 - numerai_crypto_v5 - INFO - 🚀 Numerai Crypto V5 ULTRA Pipeline initialized
+2025-08-15 09:09:15,097 - numerai_crypto_v5 - INFO - 🎯 BREAKTHROUGH TARGETS: RMSE < 0.08 | CORR > 0.9 | MMC > 0.3 | Sharpe > 2.0
+2025-08-15 09:09:15,097 - numerai_crypto_v5 - INFO - ⚡ Starting Numerai Crypto V5 Fast Pipeline
+2025-08-15 09:09:15,097 - numerai_crypto_v5 - INFO - 🚀 Starting Numerai Crypto V5 Comprehensive Pipeline
+2025-08-15 09:09:15,097 - numerai_crypto_v5 - INFO - ================================================================================
+2025-08-15 09:09:15,097 - numerai_crypto_v5 - INFO - 📊 PHASE 1: DATA LOADING
+2025-08-15 09:09:15,097 - numerai_crypto_v5 - INFO - 📊 Loading V5 training data...
+2025-08-15 09:09:15,108 - numerai_crypto_v5 - INFO - ✅ Targets loaded: (3640, 3)
+2025-08-15 09:09:15,128 - numerai_crypto_v5 - INFO - ✅ Price data loaded: (53288, 9)
+2025-08-15 09:09:15,166 - numerai_crypto_v5 - INFO - ✅ Data merged: (3499, 10)
+2025-08-15 09:09:15,167 - numerai_crypto_v5 - INFO - 🔧 PHASE 2: V5 FEATURE ENGINEERING
+2025-08-15 09:09:15,167 - numerai_crypto_v5 - INFO - 🔧 Generating V5 ULTRA advanced features (LEAK-FREE)...
+2025-08-15 09:09:15,167 - numerai_crypto_v5 - INFO - ⏰ Using temporal feature engineering (leak-free)
+2025-08-15 09:09:57,444 - numerai_crypto_v5 - INFO - 🚀 Applying BREAKTHROUGH advanced feature engineering...
+2025-08-15 09:09:57,453 - numerai_crypto_v5 - INFO - ✅ Advanced features added: 95 new features
+2025-08-15 09:09:57,453 - numerai_crypto_v5 - INFO - ✅ V5 ULTRA features generated (LEAK-FREE): (3499, 105)
+2025-08-15 09:09:57,453 - numerai_crypto_v5 - INFO -    Total features: 105
+2025-08-15 09:09:57,453 - numerai_crypto_v5 - INFO -    Samples: 3499
+2025-08-15 09:09:57,453 - numerai_crypto_v5 - INFO - 🎯 PHASE 3: ADVANCED FEATURE SELECTION
+2025-08-15 09:09:57,454 - numerai_crypto_v5 - INFO - 🎯 V5 feature selection (max 100 features)...
+2025-08-15 09:09:57,483 - numerai_crypto_v5 - INFO - 🔍 Analyzing 102 features...
+2025-08-15 09:09:58,705 - numerai_crypto_v5 - INFO - ✅ Selected 100 features
+2025-08-15 09:09:58,706 - numerai_crypto_v5 - INFO - 🤖 PHASE 4: ADVANCED MODEL TRAINING
+2025-08-15 09:09:58,707 - numerai_crypto_v5 - INFO - 🤖 Training V5 model ensemble...
+2025-08-15 09:09:58,776 - numerai_crypto_v5 - INFO - 🚀 Training LightGBM...
+2025-08-15 09:10:01,631 - numerai_crypto_v5 - INFO - 🚀 Training XGBoost...
+2025-08-15 09:10:02,744 - numerai_crypto_v5 - INFO - 🚀 Training CatBoost...
+2025-08-15 09:10:04,999 - numerai_crypto_v5 - INFO - 🚀 Training Random Forest...
+2025-08-15 09:10:05,004 - numerai_crypto_v5 - ERROR - ❌ Model training failed: cudaErrorNoDevice: no CUDA-capable device is detected
+2025-08-15 09:10:05,006 - numerai_crypto_v5 - ERROR - Traceback (most recent call last):
+  File "/media/knight2/EDB/repos/Numer_crypto_v5/scripts/numerai_crypto_pipeline.py", line 506, in train_models
+    rf_model.fit(X_train_scaled, y)
+  File "/media/knight2/EDB/numer_crypto_temp/environment/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 216, in wrapper
+    ret = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/media/knight2/EDB/numer_crypto_temp/environment/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 368, in dispatch
+    return self.dispatch_func(func_name, gpu_func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/knight2/EDB/numer_crypto_temp/environment/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 218, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "cuml/internals/base.pyx", line 757, in cuml.internals.base.UniversalBase.dispatch_func
+  File "cuml/internals/base.pyx", line 98, in cuml.internals.base.deprecate_non_keyword_only.decorator.inner
+  File "cuml/ensemble/randomforestregressor.pyx", line 431, in cuml.ensemble.randomforestregressor.RandomForestRegressor.fit
+  File "/media/knight2/EDB/numer_crypto_temp/environment/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 216, in wrapper
+    ret = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "cuml/ensemble/randomforest_common.pyx", line 342, in cuml.ensemble.randomforest_common.BaseRandomForestModel._dataset_setup_for_fit
+  File "/media/knight2/EDB/numer_crypto_temp/environment/lib/python3.12/site-packages/cuml/internals/input_utils.py", line 358, in input_to_cuml_array
+    arr = CumlArray.from_input(
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/media/knight2/EDB/numer_crypto_temp/environment/lib/python3.12/site-packages/cuml/internals/memory_utils.py", line 74, in cupy_rmm_wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/media/knight2/EDB/numer_crypto_temp/environment/lib/python3.12/site-packages/cuml/internals/array.py", line 1161, in from_input
+    arr.to_output(
+  File "/media/knight2/EDB/numer_crypto_temp/environment/lib/python3.12/site-packages/cuml/internals/memory_utils.py", line 74, in cupy_rmm_wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/media/knight2/EDB/numer_crypto_temp/environment/lib/python3.12/site-packages/cuml/internals/array.py", line 617, in to_output
+    return output_mem_type.xpy.asarray(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/knight2/EDB/numer_crypto_temp/environment/lib/python3.12/site-packages/cupy/_creation/from_data.py", line 88, in asarray
+    return _core.array(a, dtype, False, order, blocking=blocking)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cupy/_core/core.pyx", line 2509, in cupy._core.core.array
+  File "cupy/_core/core.pyx", line 2536, in cupy._core.core.array
+  File "cupy/_core/core.pyx", line 2747, in cupy._core.core._array_default
+  File "cupy/_core/core.pyx", line 167, in cupy._core.core.ndarray.__new__
+  File "cupy/_core/core.pyx", line 254, in cupy._core.core._ndarray_base._init
+  File "cupy/cuda/memory.pyx", line 875, in cupy.cuda.memory.alloc
+  File "/media/knight2/EDB/numer_crypto_temp/environment/lib/python3.12/site-packages/rmm/allocators/cupy.py", line 37, in rmm_cupy_allocator
+    buf = pylibrmm.device_buffer.DeviceBuffer(size=nbytes, stream=stream)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "rmm/pylibrmm/device_buffer.pyx", line 94, in rmm.pylibrmm.device_buffer.DeviceBuffer.__cinit__
+  File "rmm/pylibrmm/memory_resource.pyx", line 1154, in rmm.pylibrmm.memory_resource.get_current_device_resource
+  File "/media/knight2/EDB/numer_crypto_temp/environment/lib/python3.12/site-packages/rmm/_cuda/gpu.py", line 58, in getDevice
+    raise CUDARuntimeError(status)
+rmm._cuda.gpu.CUDARuntimeError: cudaErrorNoDevice: no CUDA-capable device is detected
+
+2025-08-15 09:10:05,007 - numerai_crypto_v5 - ERROR - ❌ V5 Pipeline failed: cudaErrorNoDevice: no CUDA-capable device is detected
+2025-08-15 09:10:05,008 - numerai_crypto_v5 - ERROR - Traceback (most recent call last):
+  File "/media/knight2/EDB/repos/Numer_crypto_v5/scripts/numerai_crypto_pipeline.py", line 968, in run_comprehensive_pipeline
+    self.train_models(X, y, selected_features)
+  File "/media/knight2/EDB/repos/Numer_crypto_v5/scripts/numerai_crypto_pipeline.py", line 506, in train_models
+    rf_model.fit(X_train_scaled, y)
+  File "/media/knight2/EDB/numer_crypto_temp/environment/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 216, in wrapper
+    ret = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/media/knight2/EDB/numer_crypto_temp/environment/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 368, in dispatch
+    return self.dispatch_func(func_name, gpu_func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/knight2/EDB/numer_crypto_temp/environment/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 218, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "cuml/internals/base.pyx", line 757, in cuml.internals.base.UniversalBase.dispatch_func
+  File "cuml/internals/base.pyx", line 98, in cuml.internals.base.deprecate_non_keyword_only.decorator.inner
+  File "cuml/ensemble/randomforestregressor.pyx", line 431, in cuml.ensemble.randomforestregressor.RandomForestRegressor.fit
+  File "/media/knight2/EDB/numer_crypto_temp/environment/lib/python3.12/site-packages/cuml/internals/api_decorators.py", line 216, in wrapper
+    ret = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "cuml/ensemble/randomforest_common.pyx", line 342, in cuml.ensemble.randomforest_common.BaseRandomForestModel._dataset_setup_for_fit
+  File "/media/knight2/EDB/numer_crypto_temp/environment/lib/python3.12/site-packages/cuml/internals/input_utils.py", line 358, in input_to_cuml_array
+    arr = CumlArray.from_input(
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/media/knight2/EDB/numer_crypto_temp/environment/lib/python3.12/site-packages/cuml/internals/memory_utils.py", line 74, in cupy_rmm_wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/media/knight2/EDB/numer_crypto_temp/environment/lib/python3.12/site-packages/cuml/internals/array.py", line 1161, in from_input
+    arr.to_output(
+  File "/media/knight2/EDB/numer_crypto_temp/environment/lib/python3.12/site-packages/cuml/internals/memory_utils.py", line 74, in cupy_rmm_wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/media/knight2/EDB/numer_crypto_temp/environment/lib/python3.12/site-packages/cuml/internals/array.py", line 617, in to_output
+    return output_mem_type.xpy.asarray(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/knight2/EDB/numer_crypto_temp/environment/lib/python3.12/site-packages/cupy/_creation/from_data.py", line 88, in asarray
+    return _core.array(a, dtype, False, order, blocking=blocking)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "cupy/_core/core.pyx", line 2509, in cupy._core.core.array
+  File "cupy/_core/core.pyx", line 2536, in cupy._core.core.array
+  File "cupy/_core/core.pyx", line 2747, in cupy._core.core._array_default
+  File "cupy/_core/core.pyx", line 167, in cupy._core.core.ndarray.__new__
+  File "cupy/_core/core.pyx", line 254, in cupy._core.core._ndarray_base._init
+  File "cupy/cuda/memory.pyx", line 875, in cupy.cuda.memory.alloc
+  File "/media/knight2/EDB/numer_crypto_temp/environment/lib/python3.12/site-packages/rmm/allocators/cupy.py", line 37, in rmm_cupy_allocator
+    buf = pylibrmm.device_buffer.DeviceBuffer(size=nbytes, stream=stream)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "rmm/pylibrmm/device_buffer.pyx", line 94, in rmm.pylibrmm.device_buffer.DeviceBuffer.__cinit__
+  File "rmm/pylibrmm/memory_resource.pyx", line 1154, in rmm.pylibrmm.memory_resource.get_current_device_resource
+  File "/media/knight2/EDB/numer_crypto_temp/environment/lib/python3.12/site-packages/rmm/_cuda/gpu.py", line 58, in getDevice
+    raise CUDARuntimeError(status)
+rmm._cuda.gpu.CUDARuntimeError: cudaErrorNoDevice: no CUDA-capable device is detected
+
+2025-08-15 09:10:05,008 - numerai_crypto_v5 - ERROR - ❌ Fast pipeline failed: cudaErrorNoDevice: no CUDA-capable device is detected
+2025-08-15 09:10:05,008 - numerai_crypto_v5 - ERROR - ❌ Pipeline failed: cudaErrorNoDevice: no CUDA-capable device is detected

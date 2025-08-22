@@ -1,0 +1,75 @@
+2025-08-15 08:25:16,803 - numerai_crypto_v5 - WARNING - ⚠️ V5 Advanced components not available
+2025-08-15 08:25:16,803 - numerai_crypto_v5 - INFO - 🚀 Numerai Crypto V5 ULTRA Pipeline initialized
+2025-08-15 08:25:16,803 - numerai_crypto_v5 - INFO - 🎯 BREAKTHROUGH TARGETS: RMSE < 0.08 | CORR > 0.9 | MMC > 0.3 | Sharpe > 2.0
+2025-08-15 08:25:16,804 - numerai_crypto_v5 - INFO - ⚡ Starting Numerai Crypto V5 Fast Pipeline
+2025-08-15 08:25:16,804 - numerai_crypto_v5 - INFO - 🚀 Starting Numerai Crypto V5 Comprehensive Pipeline
+2025-08-15 08:25:16,804 - numerai_crypto_v5 - INFO - ================================================================================
+2025-08-15 08:25:16,804 - numerai_crypto_v5 - INFO - 📊 PHASE 1: DATA LOADING
+2025-08-15 08:25:16,804 - numerai_crypto_v5 - INFO - 📊 Loading V5 training data...
+2025-08-15 08:25:16,814 - numerai_crypto_v5 - INFO - ✅ Targets loaded: (3640, 3)
+2025-08-15 08:25:16,835 - numerai_crypto_v5 - INFO - ✅ Price data loaded: (53288, 9)
+2025-08-15 08:25:16,874 - numerai_crypto_v5 - INFO - ✅ Data merged: (3499, 10)
+2025-08-15 08:25:16,874 - numerai_crypto_v5 - INFO - 🔧 PHASE 2: V5 FEATURE ENGINEERING
+2025-08-15 08:25:16,874 - numerai_crypto_v5 - INFO - 🔧 Generating V5 ULTRA advanced features...
+2025-08-15 08:25:16,951 - numerai_crypto_v5 - WARNING - ⚠️ Advanced feature engineering not available, using basic features only
+2025-08-15 08:25:16,951 - numerai_crypto_v5 - INFO - ✅ V5 ULTRA features generated: (3499, 60)
+2025-08-15 08:25:16,951 - numerai_crypto_v5 - INFO -    Total features: 60
+2025-08-15 08:25:16,951 - numerai_crypto_v5 - INFO -    Samples: 3499
+2025-08-15 08:25:16,951 - numerai_crypto_v5 - INFO - 🎯 PHASE 3: ADVANCED FEATURE SELECTION
+2025-08-15 08:25:16,952 - numerai_crypto_v5 - INFO - 🎯 V5 feature selection (max 100 features)...
+2025-08-15 08:25:16,969 - numerai_crypto_v5 - INFO - 🔍 Analyzing 57 features...
+2025-08-15 08:25:17,860 - numerai_crypto_v5 - INFO - ✅ Selected 57 features
+2025-08-15 08:25:17,861 - numerai_crypto_v5 - INFO - 🤖 PHASE 4: ADVANCED MODEL TRAINING
+2025-08-15 08:25:17,861 - numerai_crypto_v5 - INFO - 🤖 Training V5 model ensemble...
+2025-08-15 08:25:17,895 - numerai_crypto_v5 - INFO - 🚀 Training LightGBM...
+2025-08-15 08:25:20,159 - numerai_crypto_v5 - INFO - 🚀 Training XGBoost...
+2025-08-15 08:25:21,314 - numerai_crypto_v5 - INFO - 🚀 Training CatBoost...
+2025-08-15 08:25:23,167 - numerai_crypto_v5 - INFO - 🚀 Training Random Forest...
+2025-08-15 08:25:23,895 - numerai_crypto_v5 - INFO - 🚀 Training Ridge...
+2025-08-15 08:25:24,015 - numerai_crypto_v5 - INFO - 🚀 Training ElasticNet...
+2025-08-15 08:25:24,021 - numerai_crypto_v5 - INFO - ✅ Trained 6 models successfully
+2025-08-15 08:25:24,022 - numerai_crypto_v5 - INFO - 📊 PHASE 5: TIME SERIES VALIDATION
+2025-08-15 08:25:24,022 - numerai_crypto_v5 - INFO - 📊 V5 ULTRA validation with BREAKTHROUGH techniques...
+2025-08-15 08:25:24,045 - numerai_crypto_v5 - INFO - 🔍 Validating lightgbm...
+2025-08-15 08:25:33,455 - numerai_crypto_v5 - INFO - ✅ lightgbm: RMSE=0.105245 ± 0.001454, CORR=0.032286
+2025-08-15 08:25:33,455 - numerai_crypto_v5 - INFO - 🔍 Validating xgboost...
+2025-08-15 08:25:37,622 - numerai_crypto_v5 - INFO - ✅ xgboost: RMSE=0.106918 ± 0.002953, CORR=0.005520
+2025-08-15 08:25:37,622 - numerai_crypto_v5 - INFO - 🔍 Validating catboost...
+2025-08-15 08:25:47,609 - numerai_crypto_v5 - INFO - ✅ catboost: RMSE=0.101923 ± 0.001276, CORR=-0.006385
+2025-08-15 08:25:47,609 - numerai_crypto_v5 - INFO - 🔍 Validating randomforest...
+2025-08-15 08:25:47,805 - numerai_crypto_v5 - INFO - ✅ randomforest: RMSE=0.082824 ± 0.005418, CORR=0.852521
+2025-08-15 08:25:47,805 - numerai_crypto_v5 - INFO - 🔍 Validating ridge...
+2025-08-15 08:25:47,912 - numerai_crypto_v5 - INFO - ✅ ridge: RMSE=0.099721 ± 0.001966, CORR=0.096085
+2025-08-15 08:25:47,912 - numerai_crypto_v5 - INFO - 🔍 Validating elasticnet...
+2025-08-15 08:25:47,919 - numerai_crypto_v5 - INFO - ✅ elasticnet: RMSE=0.100190 ± 0.002062, CORR=0.000000
+2025-08-15 08:25:47,919 - numerai_crypto_v5 - INFO - 🎯 PHASE 6: ENSEMBLE OPTIMIZATION
+2025-08-15 08:25:47,919 - numerai_crypto_v5 - INFO - 🎯 Creating BREAKTHROUGH V5 ULTRA ensemble...
+2025-08-15 08:25:48,008 - numerai_crypto_v5 - INFO - 🔄 Using fallback simple ensemble...
+2025-08-15 08:25:48,010 - numerai_crypto_v5 - INFO - ✅ Fallback ensemble RMSE: 0.081522, Correlation: 0.894292
+2025-08-15 08:25:48,010 - numerai_crypto_v5 - INFO - 🏆 Fallback weights: {'lightgbm': np.float64(0.15640802336138113), 'xgboost': np.float64(0.15396180463106413), 'catboost': np.float64(0.16150640538207417), 'randomforest': np.float64(0.19875043295853062), 'ridge': np.float64(0.1650734026444769), 'elasticnet': np.float64(0.16429993102247303)}
+2025-08-15 08:25:48,010 - numerai_crypto_v5 - INFO - 💾 PHASE 7: SAVING MODELS
+2025-08-15 08:25:48,010 - numerai_crypto_v5 - INFO - 💾 Saving V5 models and results...
+2025-08-15 08:25:48,034 - numerai_crypto_v5 - INFO - ✅ Models and results saved with timestamp: 20250815_082548
+2025-08-15 08:25:48,034 - numerai_crypto_v5 - INFO - 📄 PHASE 8: GENERATING SUBMISSION
+2025-08-15 08:25:48,034 - numerai_crypto_v5 - INFO - 📄 Generating V5 submission...
+2025-08-15 08:25:48,046 - numerai_crypto_v5 - INFO - ✅ Submission saved: /media/knight2/EDB/numer_crypto_temp/data/submission/submission_v5_20250815_082548.csv
+2025-08-15 08:25:48,046 - numerai_crypto_v5 - INFO - 📊 Submission stats: 3499 predictions
+2025-08-15 08:25:48,046 - numerai_crypto_v5 - INFO - 📊 Signal range: [0.001000, 0.999000]
+2025-08-15 08:25:48,046 - numerai_crypto_v5 - INFO - ================================================================================
+2025-08-15 08:25:48,046 - numerai_crypto_v5 - INFO - 🚀 V5 ULTRA PIPELINE COMPLETED SUCCESSFULLY
+2025-08-15 08:25:48,046 - numerai_crypto_v5 - INFO - ================================================================================
+2025-08-15 08:25:48,046 - numerai_crypto_v5 - INFO - 🕒 Total Runtime: 31.2 seconds (0.5 minutes)
+2025-08-15 08:25:48,046 - numerai_crypto_v5 - INFO - 📊 Data Shape: (3499, 10)
+2025-08-15 08:25:48,046 - numerai_crypto_v5 - INFO - 🔧 Features Generated: 60 → Selected: 57
+2025-08-15 08:25:48,046 - numerai_crypto_v5 - INFO - 🤖 Models Trained: 6
+2025-08-15 08:25:48,046 - numerai_crypto_v5 - INFO - 🎯 Ensemble Method: simple_fallback
+2025-08-15 08:25:48,046 - numerai_crypto_v5 - INFO - 🎯 Ensemble RMSE: 0.081522
+2025-08-15 08:25:48,046 - numerai_crypto_v5 - INFO - 📈 Ensemble Correlation: 0.894292
+2025-08-15 08:25:48,046 - numerai_crypto_v5 - INFO - 🏅 V5 ULTRA BREAKTHROUGH TARGETS:
+2025-08-15 08:25:48,046 - numerai_crypto_v5 - INFO -     • RMSE < 0.08: ✅ ACHIEVED (0.081522)
+2025-08-15 08:25:48,046 - numerai_crypto_v5 - INFO -     • CORR > 0.9: ✅ ACHIEVED (0.894292)
+2025-08-15 08:25:48,046 - numerai_crypto_v5 - INFO - 📈 IMPROVEMENTS vs Previous V5:
+2025-08-15 08:25:48,047 - numerai_crypto_v5 - INFO -     • RMSE: -0.0% improvement
+2025-08-15 08:25:48,047 - numerai_crypto_v5 - INFO -     • CORR: -0.2% improvement
+2025-08-15 08:25:48,047 - numerai_crypto_v5 - INFO - 📄 Submission: /media/knight2/EDB/numer_crypto_temp/data/submission/submission_v5_20250815_082548.csv
+2025-08-15 08:25:48,047 - numerai_crypto_v5 - INFO - ================================================================================
